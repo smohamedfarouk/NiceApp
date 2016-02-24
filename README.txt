@@ -26,20 +26,19 @@ Design Choices
               cancelling checks
 
 Packaging:
- 1. Zip contains a SRC folder with all the code
+ 1. Zip contains a SRC folder with all the code (NiceAppSrc.zip)
  2. Executable java jar file
  3. Java Doc
 
-Run Instructions (Executable):
-1. Copy the jar to a folder in C drive
-2. Make sure you have java installed in the computer
-3. Start the application using  java - jar NiceApp.jar
+Run Instructions (Executable/Maven):
+1. Create a directory called NiceApp in c drive
+2. Copy the Zip file NiceAppSrc.zip to the newly created directory
+3. cd NiceAppSrc folder
+4. Make sure you have java installed in the computer
+5. Start the application using  java - jar nice-1.0.jar
+6. mvn clean install (should show the results of run and tests)
 
-Run Instructions (Maven):
-1. Copy the src to a folder in C drive
-2. Make sure you have java installed in the computer
-3. navigate to the directory where you have the pom.xml
-4. mvn clean install (should show the results of run and tests)
+
 
 
 

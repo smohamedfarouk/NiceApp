@@ -57,7 +57,10 @@
                         </goals>
                         <configuration>
                             <mainClass>com.nice.tech.App</mainClass>
+                            <classpathScope>runtime</classpathScope>
                             <arguments>
+                                <argument>-classpath</argument>
+
                                 <argument>data/Trades.data</argument>
                             </arguments>
                         </configuration>
