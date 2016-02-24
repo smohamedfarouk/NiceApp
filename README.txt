@@ -30,8 +30,19 @@ Packaging:
  2. Executable java jar file
  3. Java Doc
 
-Run Instructions:
-Start the client java - jar NiceApp.jar
+Run Instructions (Executable):
+1. Copy the jar to a folder in C drive
+2. Make sure you have java installed in the computer
+3. Start the application using  java - jar NiceApp.jar
+
+Run Instructions (Maven):
+1. Copy the src to a folder in C drive
+2. Make sure you have java installed in the computer
+3. navigate to the directory where you have the pom.xml
+4. mvn clean install (should show the results of run and tests)
+
+
+
 
 
 
