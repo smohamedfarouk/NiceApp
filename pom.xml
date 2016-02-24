@@ -38,6 +38,7 @@
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>2.4</version>
                 <configuration>
+                    <outputDirectory>.</outputDirectory>
                     <archive>
                         <manifest>
                             <mainClass>com.nice.tech.App</mainClass>
