@@ -226,7 +226,7 @@ public class CancellationReportingTest {
         main.start(temp, fileExceptions, excessiveCancellationsReport);
         assertTrue(fileExceptions.size() == 0);
         assertTrue(main.getCompanyOrdersStatus().size() == 1);
-        String expectedMessage = "During the period Thu May 21 16:23:10 BST 2015 to Thu May 21 16:23:13 BST 2015 the Company \"DGreedy bankers ltd.\" engaged in excessive cancelling. In this period 57.14285714285714% of trades \"DGreedy bankers ltd.\" submitted, by quantity, were cancels.\n";
+        String expectedMessage = "During the period Thu May 21 16:23:10 BST 2015 to Thu May 21 16:23:13 BST 2015 the Company \"DGreedy bankers ltd.\" engaged in excessive cancelling. In this period 57.14% of trades \"DGreedy bankers ltd.\" submitted, by quantity, were cancels.\n";
         assertTrue(main.getCompanyOrdersStatus().get("DGreedy bankers ltd.").isCancelReported() == true);
         assertTrue(main.getCompanyOrdersStatus().get("DGreedy bankers ltd.").getCancelReportedMessage().equalsIgnoreCase(expectedMessage));
     }
