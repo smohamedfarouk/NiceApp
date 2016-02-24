@@ -1,6 +1,7 @@
 package com.nice.tech;
 
 
+import java.text.DecimalFormat;
 import java.util.Date;
 import java.util.Map;
 import java.util.UUID;
@@ -21,6 +22,8 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 
 public class CompanyOrderStatus {
+    private static DecimalFormat df2 = new DecimalFormat(".##");
+
     private String companyName;
     private Date lastOrderDateTime;
     private Date lastOrderEndDateTime;
@@ -91,11 +94,12 @@ public class CompanyOrderStatus {
     public boolean checkCancels(Message message) {
         if (getNoOfOrders() > 1) {
             double ratio = (double) cancelCumulatives / orderCumulatives;
+            String ratioStr = df2.format(ratio *100) ;
             if (ratio >= 0.33333 && !cancelReported) {
                 cancelReported = true;
                 cancelReportedMessage =
                         "During the period " + getLastOrderDateTime() + " to " + message.getMessageTime() + " the Company \"" + getCompanyName() + "\"" + " engaged in excessive cancelling." +
-                                " In this period " + ratio * 100 + "% of trades \"" + getCompanyName() + "\"" + " submitted, by quantity, were cancels.\n";
+                                " In this period " +  ratioStr + "% of trades \"" + getCompanyName() + "\"" + " submitted, by quantity, were cancels.\n";
 
                 System.out.print(cancelReportedMessage);
                 return true;
