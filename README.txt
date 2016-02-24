@@ -1,0 +1,35 @@
+Requirement:
+Write a program to process the data file and print a line to the console when it detects that a company is engaged in excessive cancelling.
+
+Java JDK:   jdk1.7.0_80
+Source code available from github URL: https://github.com/smohamedfarouk/BBVAPriceTicker
+
+Design Choices
+ * Used: Poison pill pattern for termination of the Queue
+ * Used: Message identifier as UUID from Java
+ * Used: Factory Pattern for the Message creation
+ * Used: Deque as we can take both from begining of the queue or end of the queue
+ * Used: Factory Pattern for the Message creation
+ * Used: Extended the Deque to provide event notification to the Main application for processing Messages
+ * Used: Java Executors and ThreadPool for aysnchronous execution
+ * Used: Consumer and producer pattern using basic java available synchronizers
+ * Used: Exception design - Currently exceptions thrown while processing file reading will be available from the main application using a
+         Map<String, Exception> fileExceptions = new HashMap();
+ * Used: Just one thread for producer and one for consumer to avoid more race conditions
+
+ Assumptions under following Scenario:
+  * Scenario: Cancellation only within the same period when we have a time period with only cancel orders we still
+              consider them for excessive cancelling checks
+  * Scenario: when within the same period we have more cancellations than order, we still consider them for excessive
+              cancelling checks
+
+Packaging:
+ 1. Zip contains a SRC folder with all the code
+ 2. Executable java jar file
+ 3. Java Doc
+
+Run Instructions:
+Start the client java - jar NiceApp.jar
+
+
+
