@@ -1,0 +1,34 @@
+2015-05-21 16:23:00,AGreedy bankers ltd.,D,10    // Test Case 1 - To be reported Cancelling within the same second
+2015-05-21 16:23:00,AGreedy bankers ltd.,F,10    // Test Case 1 - To be reported Cancelling within the same second
+2015-05-21 16:23:01,BGreedy bankers ltd.,D,10    // Test Case 2 - Not to be reported no cancellation within the same second
+2015-05-21 16:23:01,BGreedy bankers ltd.,D,10    // Test Case 2 - Not to be reported no cancellation within the same second
+2015-05-21 16:23:00,CGreedy bankers ltd.,D,10    // Test Case 3 - To be reported Cancelling within the window of 1 second
+2015-05-21 16:23:01,CGreedy bankers ltd.,F,10    // Test Case 3 - To be reported Cancelling within the window of 1 second
+2015-05-21 16:23:02,CCGreedy bankers ltd.,D,10   // Test Case 3 - To be reported Cancelling within the window of 1 second
+2015-05-21 16:23:03,CGreedy bankers ltd.,D,10    // Test Case 3  - To be reported Cancelling within the window of 1 second
+2015-05-21 16:23:35,CGreedy bankers ltd.,D,15    // Test Case 3 - To be reported Cancelling within the window of 4 second
+2015-05-21 16:23:39,CGreedy bankers ltd.,D,10    // Test Case 3 - To be reported Cancelling within the window of 4 second
+2015-05-21 16:23:10,DGreedy bankers ltd.,D,15    // Test Case 4  - To be reported Cancelling within the window of 4 second (time less than actual window seconds)
+2015-05-21 16:23:13,DGreedy bankers ltd.,F,20    // Test Case 4  - To be reported Cancelling within the window of 4 second (time less than actual window seconds)
+
+2015-05-21 16:23:10,DGreedy bankers ltd.,D,15   // Test Case 5 - Not To be reported Cancelling within the window of 4 second as already reported
+2015-05-21 16:23:13,DGreedy bankers ltd.,F,20   // Test Case 5 - Not To be reported Cancelling within the window of 4 second as already reported
+2015-05-21 16:24:10,DGreedy bankers ltd.,D,15   // Test Case 5 - Not To be reported Cancelling within the window of 4 second as already reported
+2015-05-21 16:24:13,DGreedy bankers ltd.,F,20   // Test Case 5 - Not To be reported Cancelling within the window of 4 second as already reported
+
+2015-05-21 16:23:20,EGreedy bankers ltd.,D,15   // Test Case 6 - Check Cumulatives (Cancel and Order totals) (with 5 second window)
+2015-05-21 16:23:20,EGreedy bankers ltd.,F,4    // Test Case 6 - Check Cumulatives (Cancel and Order totals) (with 5 second window)
+2015-05-21 16:23:22,EGreedy bankers ltd.,D,15   // Test Case 6 - Check Cumulatives (Cancel and Order totals) (with 5 second window)
+2015-05-21 16:23:22,EGreedy bankers ltd.,F,4    // Test Case 6 - Check Cumulatives (Cancel and Order totals) (with 5 second window)
+
+ 2015-05-21 16:23:20,FGreedy bankers ltd.,D,15   // Test Case 7 - Check period message sizes after cleaning (with 5 second window) - Should be removed after cleaning
+ 2015-05-21 16:23:20,FGreedy bankers ltd.,D,15   // Test Case 7 - Check period message sizes after cleaning (with 5 second window)
+ 2015-05-21 16:23:21,FGreedy bankers ltd.,D,2    // Test Case 7 - Check period message sizes after cleaning (with 5 second window)
+ 2015-05-21 16:23:26,FGreedy bankers ltd.,D,10   // Test Case 7 - Check period message sizes after cleaning (with 5 second window)
+ 2015-05-21 16:23:26,FGreedy bankers ltd.,F,15   // Test Case 7 - Check period message sizes after cleaning (with 5 second window)
+
+ 2015-05-21 16:23:20,GGreedy bankers ltd.,D,15   // Test Case 8 - Check Cumulatives (Cancel and order totals)  sizes after cleaning (with 5 second window)  - Should be removed after cleaning
+ 2015-05-21 16:23:20,GGreedy bankers ltd.,D,15   // Test Case 8- Check Cumulatives (Cancel and order totals)  sizes after cleaning (with 5 second window)
+ 2015-05-21 16:23:21,GGreedy bankers ltd.,D,2    // Test Case 8 - Check Cumulatives (Cancel and order totals)  sizes after cleaning (with 5 second window)
+ 2015-05-21 16:23:26,GGreedy bankers ltd.,D,10   // Test Case 8 - Check Cumulatives (Cancel and order totals)  sizes after cleaning (with 5 second window)
+ 2015-05-21 16:23:26,GGreedy bankers ltd.,F,15   // Test Case 8 - Check Cumulatives (Cancel and order totals)  sizes after cleaning (with 5 second window)
