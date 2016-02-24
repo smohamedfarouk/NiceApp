@@ -40,7 +40,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>main.Main</mainClass>
+                            <mainClass>com.nice.tech.App</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
