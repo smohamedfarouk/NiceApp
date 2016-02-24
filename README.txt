@@ -2,7 +2,9 @@ Requirement:
 Write a program to process the data file and print a line to the console when it detects that a company is engaged in excessive cancelling.
 
 Java JDK:   jdk1.7.0_80
-Source code available from github URL: https://github.com/smohamedfarouk/BBVAPriceTicker
+Full Source code available from github URL: https://github.com/smohamedfarouk/NiceApp/tree/master/src/main/java/com/nice/tech
+Full Test   code available from github URL: https://github.com/smohamedfarouk/NiceApp/tree/master/src/test/java/com/nice/tech
+Java Documentation available from github URL: https://github.com/smohamedfarouk/NiceApp/tree/master/javadoc
 
 Design Choices
  * Used: Poison pill pattern for termination of the Queue
