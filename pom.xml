@@ -16,7 +16,7 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.11</version>
-            <scope>java</scope>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
@@ -57,10 +57,8 @@
                         </goals>
                         <configuration>
                             <mainClass>com.nice.tech.App</mainClass>
-                            <classpathScope>runtime</classpathScope>
                             <arguments>
                                 <argument>-classpath</argument>
-
                                 <argument>data/Trades.data</argument>
                             </arguments>
                         </configuration>

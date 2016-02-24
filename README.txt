@@ -35,7 +35,7 @@ Run Instructions (Executable/Maven):
 2. Copy the Zip file NiceAppSrc.zip to the newly created directory
 3. cd NiceAppSrc folder
 4. Make sure you have java installed in the computer
-5. Start the application using  java - jar nice-1.0.jar
+5. Start the application using  java -jar nice-final.jar
 6. mvn clean install (should show the results of run and tests)
 
 
